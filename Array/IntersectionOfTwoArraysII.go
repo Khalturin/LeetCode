@@ -1,4 +1,4 @@
-package main
+package LeetCode
 
 /*
 	Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must

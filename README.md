@@ -1,3 +1,4 @@
 # LeetCode
 Solving problems on LeetCode
-## Array
+* Array
+* String

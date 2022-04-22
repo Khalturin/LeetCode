@@ -4,7 +4,7 @@ import "testing"
 
 // Equal проверяет, что a и b содержат одинаковые элементы.
 // nil аргумент эквивалентен пустому срезу.
-func Equal(a, b [][]int) bool {
+func Equal2D(a, b [][]int) bool {
 	if len(a) != len(b) {
 		return false
 	}
@@ -30,7 +30,7 @@ func TestRotateImageOne(t *testing.T) {
 		{9, 6, 3},
 	}
 	res := Rotate(matrix)
-	if !Equal(etalon, res) {
+	if !Equal2D(etalon, res) {
 		t.Error("fail TestRotateImageOne, \nexpected: \n", etalon, "\nres: \n", res)
 	}
 }
@@ -50,7 +50,7 @@ func TestRotateImageTwo(t *testing.T) {
 	}
 	res := Rotate(matrix)
 
-	if !Equal(etalon, res) {
+	if !Equal2D(etalon, res) {
 		t.Error("fail TestRotateImageTwo, \nexpected: \n", etalon, "\nres: \n", res)
 	}
 }

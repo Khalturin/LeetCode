@@ -31,9 +31,9 @@ func moveZeroes(nums []int) {
 	idxLastZero := idxLast
 	for i := idxLast; i >= 0; i-- {
 		if nums[i] == 0 {
-			revers(nums, i, idxLastZero)
+			reversArr(nums, i, idxLastZero)
 			idxLastZero--
-			revers(nums, i, idxLastZero)
+			reversArr(nums, i, idxLastZero)
 		}
 	}
 	fmt.Println(nums)

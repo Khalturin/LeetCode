@@ -64,7 +64,7 @@ func rotateLeft(nums []int, k int) []int {
 //	return nums
 //}
 
-func revers(nums []int, start, end int) {
+func reversArr(nums []int, start, end int) {
 	for start < end {
 		nums[start], nums[end] = nums[end], nums[start]
 		start++
@@ -81,9 +81,9 @@ func rotateRight(nums []int, k int) []int {
 	}
 	k = k % n
 
-	revers(nums, 0, n-1)
-	revers(nums, 0, k-1)
-	revers(nums, k, n-1)
+	reversArr(nums, 0, n-1)
+	reversArr(nums, 0, k-1)
+	reversArr(nums, k, n-1)
 
 	fmt.Println(nums)
 

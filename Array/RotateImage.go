@@ -17,7 +17,7 @@ func Rotate(matrix [][]int) [][]int {
 		for j := i + 1; j < len(matrix[i]); j++ {
 			matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
 		}
-		revers(matrix[i], 0, len(matrix)-1)
+		reversArr(matrix[i], 0, len(matrix)-1)
 	}
 	return matrix
 }
